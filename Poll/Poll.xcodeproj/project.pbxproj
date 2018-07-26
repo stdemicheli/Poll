@@ -12,6 +12,7 @@
 		3D513026210A5AEE00542AB0 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D513025210A5AEE00542AB0 /* Combined.storyboard */; };
 		3D513028210A5C3200542AB0 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D513027210A5C3200542AB0 /* CombinedViewController.swift */; };
 		3D51302A210A5D9000542AB0 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D513029210A5D9000542AB0 /* PollingTabBarViewController.swift */; };
+		3D51302C210A5F2400542AB0 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D51302B210A5F2400542AB0 /* VoteControllerProtocol.swift */; };
 		3D8BC813210A55A800067D9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC812210A55A800067D9B /* AppDelegate.swift */; };
 		3D8BC818210A55A800067D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BC816210A55A800067D9B /* Main.storyboard */; };
 		3D8BC81A210A55AA00067D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BC819210A55AA00067D9B /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		3D513025210A5AEE00542AB0 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
 		3D513027210A5C3200542AB0 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
 		3D513029210A5D9000542AB0 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
+		3D51302B210A5F2400542AB0 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
 		3D8BC80F210A55A800067D9B /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8BC812210A55A800067D9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8BC817210A55A800067D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				3D8BC825210A55D100067D9B /* Model Controllers */,
 				3D8BC824210A55C900067D9B /* Model */,
 				3D8BC826210A560000067D9B /* Resources */,
+				3D51302B210A5F2400542AB0 /* VoteControllerProtocol.swift */,
 			);
 			path = Poll;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				3D8BC82B210A569A00067D9B /* VoteController.swift in Sources */,
 				3D8BC813210A55A800067D9B /* AppDelegate.swift in Sources */,
 				3D8BC829210A565300067D9B /* Vote.swift in Sources */,
+				3D51302C210A5F2400542AB0 /* VoteControllerProtocol.swift in Sources */,
 				3D8BC831210A595000067D9B /* VotingViewController.swift in Sources */,
 				3D513024210A5AA000542AB0 /* ResultsTableViewController.swift in Sources */,
 				3D513028210A5C3200542AB0 /* CombinedViewController.swift in Sources */,

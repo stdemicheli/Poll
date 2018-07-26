@@ -9,22 +9,24 @@
 import UIKit
 
 class PollingTabBarViewController: UITabBarController {
-
+    // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        passVoteControllerToChildViewControllers()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func passVoteControllerToChildViewControllers() {
+        guard let viewControllers = viewControllers else { return }
+        
+        for vc in viewControllers {
+            if let vc = vc as? VoteControllerProtocol {
+                vc.voteController = voteController
+            }
+        }
     }
-    */
+    
+    // MARK: - Properties
+    let voteController = VoteController()
 
 }
