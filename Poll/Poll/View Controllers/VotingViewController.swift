@@ -22,6 +22,7 @@ class VotingViewController: UIViewController, VoteControllerProtocol {
             let response = responseTextField.text else { return }
         
         voteController?.create(name: name, response: response, timestamp: Date())
+        NotificationCenter.default.post(name: Notification.Name("SubmitVote"), object: nil)
     }
     
     /*
