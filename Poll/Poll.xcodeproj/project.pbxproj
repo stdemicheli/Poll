@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D513022210A5A4300542AB0 /* Results.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D513021210A5A4300542AB0 /* Results.storyboard */; };
+		3D513024210A5AA000542AB0 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D513023210A5AA000542AB0 /* ResultsTableViewController.swift */; };
+		3D513026210A5AEE00542AB0 /* Combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D513025210A5AEE00542AB0 /* Combined.storyboard */; };
+		3D513028210A5C3200542AB0 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D513027210A5C3200542AB0 /* CombinedViewController.swift */; };
+		3D51302A210A5D9000542AB0 /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D513029210A5D9000542AB0 /* PollingTabBarViewController.swift */; };
 		3D8BC813210A55A800067D9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC812210A55A800067D9B /* AppDelegate.swift */; };
 		3D8BC818210A55A800067D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BC816210A55A800067D9B /* Main.storyboard */; };
 		3D8BC81A210A55AA00067D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BC819210A55AA00067D9B /* Assets.xcassets */; };
 		3D8BC81D210A55AA00067D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BC81B210A55AA00067D9B /* LaunchScreen.storyboard */; };
 		3D8BC829210A565300067D9B /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC828210A565300067D9B /* Vote.swift */; };
 		3D8BC82B210A569A00067D9B /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC82A210A569A00067D9B /* VoteController.swift */; };
+		3D8BC82D210A57E300067D9B /* Voting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BC82C210A57E300067D9B /* Voting.storyboard */; };
+		3D8BC831210A595000067D9B /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BC830210A595000067D9B /* VotingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D513021210A5A4300542AB0 /* Results.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Results.storyboard; sourceTree = "<group>"; };
+		3D513023210A5AA000542AB0 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		3D513025210A5AEE00542AB0 /* Combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Combined.storyboard; sourceTree = "<group>"; };
+		3D513027210A5C3200542AB0 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
+		3D513029210A5D9000542AB0 /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
 		3D8BC80F210A55A800067D9B /* Poll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8BC812210A55A800067D9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8BC817210A55A800067D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +36,8 @@
 		3D8BC81E210A55AA00067D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D8BC828210A565300067D9B /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		3D8BC82A210A569A00067D9B /* VoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		3D8BC82C210A57E300067D9B /* Voting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Voting.storyboard; sourceTree = "<group>"; };
+		3D8BC830210A595000067D9B /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				3D8BC812210A55A800067D9B /* AppDelegate.swift */,
+				3D8BC82F210A592C00067D9B /* View Controllers */,
 				3D8BC825210A55D100067D9B /* Model Controllers */,
 				3D8BC824210A55C900067D9B /* Model */,
 				3D8BC826210A560000067D9B /* Resources */,
@@ -94,9 +109,23 @@
 			isa = PBXGroup;
 			children = (
 				3D8BC816210A55A800067D9B /* Main.storyboard */,
+				3D8BC82C210A57E300067D9B /* Voting.storyboard */,
+				3D513021210A5A4300542AB0 /* Results.storyboard */,
+				3D513025210A5AEE00542AB0 /* Combined.storyboard */,
 				3D8BC81B210A55AA00067D9B /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3D8BC82F210A592C00067D9B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D8BC830210A595000067D9B /* VotingViewController.swift */,
+				3D513023210A5AA000542AB0 /* ResultsTableViewController.swift */,
+				3D513027210A5C3200542AB0 /* CombinedViewController.swift */,
+				3D513029210A5D9000542AB0 /* PollingTabBarViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D8BC81D210A55AA00067D9B /* LaunchScreen.storyboard in Resources */,
+				3D513022210A5A4300542AB0 /* Results.storyboard in Resources */,
 				3D8BC81A210A55AA00067D9B /* Assets.xcassets in Resources */,
 				3D8BC818210A55A800067D9B /* Main.storyboard in Resources */,
+				3D8BC82D210A57E300067D9B /* Voting.storyboard in Resources */,
+				3D513026210A5AEE00542AB0 /* Combined.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +205,10 @@
 				3D8BC82B210A569A00067D9B /* VoteController.swift in Sources */,
 				3D8BC813210A55A800067D9B /* AppDelegate.swift in Sources */,
 				3D8BC829210A565300067D9B /* Vote.swift in Sources */,
+				3D8BC831210A595000067D9B /* VotingViewController.swift in Sources */,
+				3D513024210A5AA000542AB0 /* ResultsTableViewController.swift in Sources */,
+				3D513028210A5C3200542AB0 /* CombinedViewController.swift in Sources */,
+				3D51302A210A5D9000542AB0 /* PollingTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
