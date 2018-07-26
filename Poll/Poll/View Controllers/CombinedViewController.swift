@@ -8,7 +8,8 @@
 
 import UIKit
 
-class CombinedViewController: UIViewController {
+class CombinedViewController: UIViewController, VoteControllerProtocol {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +18,26 @@ class CombinedViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "EmbedVotingView" || segue.identifier == "EmbedResultsTable" {
+            guard let destinationVC = segue.destination as? VoteControllerProtocol else { return }
+            destinationVC.voteController = voteController
+        }
+        
+//        // Alternative:
+//        if let votingVC = segue.destination as? VotingViewController {
+//            votingVC.voteController = voteController
+//        }
+//
+//        if let resultsVC = segue.destination as? ResultsTableViewController {
+//            resultsVC.voteController = voteController
+//        }
+        
     }
-    */
 
+    // MARK: - Properties
+    var voteController: VoteController?
 }
