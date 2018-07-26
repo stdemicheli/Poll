@@ -10,9 +10,10 @@ import Foundation
 
 class VoteController {
     
-    func create(name: String, response: String) {
-        let vote = Vote(name: name, response: response)
+    func create(name: String, response: String, timestamp: Date) {
+        let vote = Vote(name: name, response: response, timestamp: timestamp)
         votes.append(vote)
+        votes = votes.sorted(by: { $0.timestamp > $1.timestamp })
     }
     
     private(set) var votes: [Vote] = []

@@ -29,15 +29,25 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell", for: indexPath)
 
-        let vote = voteController?.votes[indexPath.row]
-        cell.textLabel?.text = vote?.name
-        cell.detailTextLabel?.text = vote?.response
-
+        if let vote = voteController?.votes[indexPath.row] {
+            //        cell.textLabel?.text = vote?.name
+            //        cell.detailTextLabel?.text = vote?.response
+            guard let resultCell = cell as? ResultsTableViewCell else { return cell }
+            resultCell.vote = vote
+            
+//            resultsLabelText.text = vote.response
+//            nameLabelText.text = vote.name
+//            dateLabelText.text = formatDate(for: vote.timestamp)
+        }
+        
         return cell
     }
     
     // MARK: - Properties
     
     var voteController: VoteController?
-
+    @IBOutlet weak var resultsLabelText: UILabel!
+    @IBOutlet weak var nameLabelText: UILabel!
+    @IBOutlet weak var dateLabelText: UILabel!
+    
 }

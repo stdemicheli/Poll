@@ -17,22 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-dw-SRE">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-dw-SRE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="330"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="E8K-fo-Vc4" kind="embed" identifier="EmbedVotingView" id="pUV-ci-zWw"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ujb-T3-EEN">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujb-T3-EEN">
                                 <rect key="frame" x="0.0" y="338" width="375" height="329"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="p5Y-j9-IOF" kind="embed" identifier="EmbedResultsTable" id="4UH-nr-9G1"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="C8m-dw-SRE" secondAttribute="bottom" constant="337" id="0Bz-HP-UQP"/>
+                            <constraint firstItem="C8m-dw-SRE" firstAttribute="trailing" secondItem="ujb-T3-EEN" secondAttribute="trailing" id="KiE-M8-X5u"/>
+                            <constraint firstAttribute="bottom" secondItem="ujb-T3-EEN" secondAttribute="bottom" id="NT4-iN-hTZ"/>
+                            <constraint firstItem="C8m-dw-SRE" firstAttribute="leading" secondItem="3A3-1K-4EX" secondAttribute="leading" id="OGl-uI-2do"/>
+                            <constraint firstItem="C8m-dw-SRE" firstAttribute="leading" secondItem="ujb-T3-EEN" secondAttribute="leading" id="WYk-Zt-Vco"/>
+                            <constraint firstItem="C8m-dw-SRE" firstAttribute="top" secondItem="3A3-1K-4EX" secondAttribute="top" id="jhb-gM-Itg"/>
+                            <constraint firstItem="ujb-T3-EEN" firstAttribute="top" secondItem="C8m-dw-SRE" secondAttribute="bottom" constant="8" symbolic="YES" id="m7q-xq-wcb"/>
+                            <constraint firstAttribute="trailing" secondItem="C8m-dw-SRE" secondAttribute="trailing" id="x2Y-nb-7g5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XWu-cf-cOQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Combined" id="Eb4-SB-yFr"/>
